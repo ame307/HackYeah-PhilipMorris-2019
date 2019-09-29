@@ -1,0 +1,436 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="./img/favicon.png">
+    </link>
+    <title>NOFILTER</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/aos.css">
+
+    <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script type="module" src="./js/countUp.js"></script>
+    <script src="./js/scroll.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Barlow:400,500,600,700,900&display=swap');
+
+        body {
+            font-family: 'Barlow', sans-serif;
+            min-height: 75rem;
+            max-width: 100%;
+            overflow-x: hidden
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        a:hover {
+            color: darkgrey;
+        }
+
+        a:active {
+            color: grey;
+        }
+
+        body {
+            min-height: 75rem;
+            max-width: 100%;
+            overflow-x: hidden
+        }
+
+        li {
+            padding: 20px;
+        }
+
+        .navbar {
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+
+        .yellow-background-colored {
+            background-color: #ffd607 !important;
+        }
+
+        .nav-link {
+            font-weight: bold;
+            color: #35357d !important;
+            font-size: 1.5rem;
+            margin-right: 1rem;
+        }
+
+        .item {
+            font-weight: bold;
+            color: #f66e96;
+            font-size: 4rem;
+        }
+
+        .welcome-text {
+            font-size: 26px;
+            color: #35357d;
+            padding-left: 5rem;
+        }
+
+        .hero-text {
+            font-size: 8rem;
+            font-weight: 700;
+            line-height: 10rem;
+        }
+
+        .flicking-text {
+            font-size: 10rem;
+            font-weight: 900;
+            line-height: 7rem;
+        }
+
+        .menu-text {
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #35357d !important;
+        }
+
+        #return-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgb(0, 0, 0);
+            background: #f66e96;
+            width: 50px;
+            height: 50px;
+            display: block;
+            text-decoration: none;
+            -webkit-border-radius: 35px;
+            -moz-border-radius: 35px;
+            border-radius: 35px;
+            display: none;
+            -webkit-transition: all 0.3s linear;
+            -moz-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            z-index: 0;
+
+        }
+
+        #return-to-top i {
+            color: #fff;
+            margin: 0;
+            position: relative;
+            left: 16px;
+            top: 13px;
+            font-size: 19px;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+
+        #return-to-top:hover {
+            background: #35357d;
+        }
+
+        #return-to-top:hover i {
+            color: #fff;
+            top: 5px;
+        }
+
+        .purple-colored {
+            color: #35357d !important;
+        }
+
+        .pink-colored {
+            color: #f66e96 !important;
+        }
+
+        .grey-colored {
+            color: #878787 !important;
+        }
+
+        .vh-90 {
+            height: 90vh;
+        }
+
+        .arrow-first {
+
+            transform: rotate(-35deg);
+        }
+
+        .arrow-second {
+
+            transform: rotate(20deg);
+        }
+
+        @media (max-width: 1200px) {
+            #welcome-img {
+                visibility: hidden;
+            }
+        }
+
+
+        @media (max-width: 992px) {
+            .item {
+                margin-top: 10rem;
+            }
+
+            .arrow-first {
+                visibility: hidden;
+            }
+
+            .arrow-second {
+                visibility: hidden;
+            }
+
+            .welcome-text {
+                font-size: 16px;
+                color: #35357d;
+                padding-left: 2rem;
+            }
+
+            .hero-text {
+                font-size: 4rem;
+                font-weight: 700;
+                line-height: 3rem;
+            }
+
+            .flicking-text {
+                font-size: 7rem;
+                font-weight: 900;
+                line-height: 7rem;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <link rel="icon" href="./img/favicon.png">
+
+    <a class="scroll_to" href="#top" id="return-to-top"><i class="icon-chevron-up"></i></a>
+
+    <nav class="navbar navbar-expand-xl navbar-light yellow-background-colored" id="top">
+        <a class="navbar-brand" href="#">
+            <img src="./img/logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav justify-content-end d-flex flex-fill">
+                <li class="nav-item">
+                    <a class="nav-link scroll_to" href="#ourCampaign">Our campaign</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll_to" href="#machines">Machines</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll_to" href="#getInvolved">Get involved</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll_to" href="#actNow">Act now</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid hero">
+        <div class="row justify-content-start align-items-center yellow-background-colored vh-90">
+            <div class="col-8 welcome-text">
+                <p class="hero-text">Don't be a </p>
+                <span class="flicking-text">FLICKING</span>
+                <p class="hero-text">idiot</p>
+                <p>Think about us.</p>
+            </div>
+            <div class="col-4 text-right pr-0">
+                <img data-aos="fade-up" id="welcome-img" src="./img/rak.png" alt="" class="vh-90">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid text-center">
+        <div class="row justify-content-center align-items-center" style="height: 50vh">
+            <div class="row justify-content-center align-items-start w-100" style="width: 100%;">
+                <div class="col-lg-4">
+                    <h1 class="item" id="percentage">84</h1>
+                    <div>
+                        <h5 class="purple-colored">
+                            Percentage of butts<br>
+                            are being littered
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <h1 class="item" id="perSecond">150000</h1>
+                    <div>
+                        <h5 class="purple-colored">
+                            Butts are littered<br>per second
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <h1 class="item" id="years">10</h1>
+                    <div id="ourCampaign">
+                        <h5 class="purple-colored">
+                            There may be more cigarette butts<br>in the ocean than fish
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="ourCampaign">
+        <div class="row justify-content-start align-items-center">
+            <div class="col-lg-8">
+                <h1 class="menu-text">Our campaign</h1>
+                <div id="machines">
+                    The main goal of our campaign is to change people's attitude<br>
+                    about cigarette butts. We have to stop polluting the enviroment<br>
+                    with filter that are made of thousands of chemicals like arsenic,<br>
+                    lead and nicotine.<br><br>
+                    Our aim is to install cigarette butt recycling machines everywhere.<br>
+                    Collect butts, put them into the machines and get rewards.
+                </div>
+            </div>
+            <div class="col-lg-4 text-center">
+                <img data-aos="fade-left" src="./img/madar.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="machines">
+        <div class="row align-items-center">
+            <div class="col">
+                <h1 class="menu-text" style="margin-bottom: 4rem;">Machines</h1>
+                <div class="row align-items-middle">
+                    <div class="col-lg-8 text-center">
+                        <img src="img/machine.png" alt=" ">
+                        <div>
+                            <h5 class=" pink-colored">
+                        Recycling machine
+                        </h5>
+                    </div>
+                    <div>
+                        <p class="grey-colored">
+                            Get locally collectible rewards such<br>
+                            as discount vouchers, donation<br>
+                            to charities or other<br>
+                            kinds of discounts.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <img src="img/disposer.png" alt="">
+                    <div>
+                        <h5 class="pink-colored">Filter disposer</h5>
+                    </div>
+                    <div>
+                        <p class="grey-colored">
+                            Throw your butts into one of out<br>
+                            frequently placed disposer and<br>
+                            receive a nice message that<br>
+                            makes your day brighter.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container" style="margin-bottom: 8rem;" id="getInvolved">
+        <div class="row justify-content-center align-items-center" style="height: auto; margin-bottom: 3rem;">
+            <div class="col">
+                <h1 class="menu-text">Get involved</h1>
+                <div class="row justify-content-start align-items-center">
+                    <div class="col-2 text-center kep1">
+                        <div>
+                            <img data-aos="zoom-out-right" src="img/cigi.png" class="mb-3" alt="" height="250px"
+                                width="250px">
+                            <h5 class="menu-text">
+                                Collect the butts
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="col-2 arrow-first">
+                        <div>
+                            <img data-aos="fade" src="img/arrow.png" alt="" height="150px" width="150px">
+                        </div>
+                    </div>
+                    <div class="col-3 text-center kep2">
+                        <div>
+                            <img data-aos="zoom-out-down" src="img/recycle.png" class="mb-3" alt="" height="250px"
+                                width="250px">
+                            <h5 class="menu-text">
+                                Throw them into the machines
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="col-2 arrow-second">
+                        <div>
+                            <img data-aos="fade" src="img/arrow.png" alt="" height="150px" width="150px">
+                        </div>
+                    </div>
+                    <div class="col-2 text-center kep3">
+                        <div style="width: 250px">
+                            <img data-aos="zoom-out-left" src="img/kupon.png" class="mb-3" alt="" height="250px"
+                                width="250px">
+                            <h5 class="menu-text">
+                                Get your reward
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="actNow">
+        <div class="row justify-content-start align-items-center">
+            <div class="col-7">
+                <h1 class="menu-text">Act now</h1>
+                <div>
+                    <p class="grey-colored">
+                        The aim of our campaign is to change people's attitude about cigarette butt
+                        flicking. It is not not cool to pollute the envinronment with filter that are
+                        comprised of thousands of chemical ingredients including arsenic, lead and
+                        nicotine.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-start align-items-center">
+            <div class="col">
+                <img data-aos="fade" src="img/map.png" width="100%" height="auto" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container_fluid text-center" style="margin-top: 3rem;">
+        <img style="max-width: 100%; height: auto" src="img/footer.png" alt="">
+    </div>
+
+    <script>
+        AOS.init();
+    </script>
+
+</html>
