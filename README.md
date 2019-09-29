@@ -19,7 +19,7 @@ The concept is about a campaign to motivate people to collect the cigarette stub
 
 UX designer - Szilvás Anett<br/>
 graphic designer - Molnár Roland<br/>
-graphic designer- Matyikánics Ádám<br/>
+graphic designer - Matyikánics Ádám<br/>
 developer - Gajdár Krisztián<br/> 
 developer - Lázár Dávid<br/>
 
