@@ -1,6 +1,6 @@
 # HackYeah-PhilipMorris-2019
 
-We were on HackYeah 2019 at Warsaw in Polland. This a competition where you can pick up a task from a company and you got 24 hours to complete it. Here is our project.
+We were on HackYeah 2019 at Warsaw in Polland. This is a competition where you can pick up a task from a company and you got 24 hours to complete it. Here is our project.
 
 ## Concept
 
@@ -25,5 +25,5 @@ developer - Lázár Dávid<br/>
 
 ## Links
 
-HackYeah - https://hackyeah.pl/
+HackYeah - https://hackyeah.pl/<br/>
 Original repository - https://github.com/ame307/HackYeah-PhilipMorris
